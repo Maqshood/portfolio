@@ -14,6 +14,7 @@ const projects = [
     url: "https://dreamystory.in/",
     preview: "https://image.thum.io/get/width/1200/crop/700/wait/5/https://dreamystory.in/",
     kind: "dreamy",
+    fallbackOnly: true,
     eyebrow: "IMAGINATION ENGINE",
   },
   {
@@ -32,6 +33,7 @@ const projects = [
     url: "https://weather-wise-wine.vercel.app/",
     preview: "https://image.thum.io/get/width/1200/crop/700/wait/5/https://weather-wise-wine.vercel.app/",
     kind: "weather",
+    fallbackOnly: true,
     eyebrow: "ATMOSPHERIC SYSTEMS",
   },
   {
@@ -93,7 +95,7 @@ function ProjectCard({ project, index }) {
         className="project-card-preview"
         aria-label={`Open ${project.title} live website in a new tab`}
       >
-        {!imageFailed ? (
+        {!imageFailed && !project.fallbackOnly ? (
           <img
             src={project.preview}
             alt={`Screenshot preview of ${project.title}`}
