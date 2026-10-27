@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FiArrowUpRight, FiExternalLink, FiOrbit, FiSparkles } from "react-icons/fi";
+import { FiArrowUpRight, FiExternalLink, FiCompass, FiStar } from "react-icons/fi";
 import { SectionWrapper } from "./hoc";
 import { textVariant, fadeIn } from "../utils/motion";
 
@@ -69,7 +69,7 @@ function PreviewFallback({ kind, title }) {
         ) : kind === "tasks" ? (
           <div className="project-fallback-tasks"><small>TODAY'S MISSIONS</small><div> <i/> Design system <b>✓</b></div><div><i/> Ship new feature <b>✓</b></div><div><i/> Review roadmap <b>·</b></div></div>
         ) : (
-          <div className="project-fallback-dreamy"><FiSparkles /><small>A LITTLE MAGIC, A LOT OF STORY</small><b>Dream beyond<br/>the ordinary.</b><span>✦　✧　✦</span></div>
+          <div className="project-fallback-dreamy"><FiStar /><small>A LITTLE MAGIC, A LOT OF STORY</small><b>Dream beyond<br/>the ordinary.</b><span>✦　✧　✦</span></div>
         )}
       </div>
       <span className="project-fallback-planet" />
@@ -104,7 +104,7 @@ function ProjectCard({ project, index }) {
           <PreviewFallback kind={project.kind} title={project.title} />
         )}
         <div className="project-preview-shade" />
-        <span className="project-preview-label"><FiOrbit aria-hidden="true" /> {project.eyebrow}</span>
+        <span className="project-preview-label"><FiCompass aria-hidden="true" /> {project.eyebrow}</span>
         <span className="project-preview-open" aria-hidden="true"><FiArrowUpRight /></span>
       </a>
 
