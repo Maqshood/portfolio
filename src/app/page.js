@@ -10,6 +10,7 @@ import {
 } from "@/components";
 
 import IntroWrapper from "@/components/IntroWrapper";
+import ProjectShowcase from "@/components/ProjectShowcase";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
             <div className="overflow-hidden">
               <Tech />
             </div>
+            <ProjectShowcase />
             {/* <Works /> */}
 
             <Contact />
