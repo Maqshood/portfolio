@@ -12,7 +12,7 @@ const projects = [
     description:
       "An imaginative storytelling platform designed to bring creative ideas and stories to life.",
     url: "https://dreamystory.in/",
-    preview: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://dreamystory.in/",
+    preview: "https://image.thum.io/get/width/1200/crop/700/wait/5/https://dreamystory.in/",
     kind: "dreamy",
     eyebrow: "IMAGINATION ENGINE",
   },
@@ -30,7 +30,7 @@ const projects = [
     description:
       "Explore weather conditions and forecasts through a clear, interactive weather experience.",
     url: "https://weather-wise-wine.vercel.app/",
-    preview: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://weather-wise-wine.vercel.app/",
+    preview: "https://image.thum.io/get/width/1200/crop/700/wait/5/https://weather-wise-wine.vercel.app/",
     kind: "weather",
     eyebrow: "ATMOSPHERIC SYSTEMS",
   },
